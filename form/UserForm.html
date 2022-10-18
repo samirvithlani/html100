@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .formcss {
+        width: 500px;
+        height: 500px;
+        background-color: #f2f2f2;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      div {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- root tag form -->
+    <!-- id and nam is optional it will not throw any compilation error
+    it upto you to use it or not, -->
+    <!-- in radio button name must be given and it should be same for all radio -->
+    <!-- in checkboc name must be given and it must be same -->
+    <form class="formcss">
+      <div>
+        <label>username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="please enter name"
+        />
+      </div>
+      <div>
+        <label>user email</label>
+        <input type="email" id="email" name="useremail" />
+      </div>
+      <div>
+        <label>password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <div>
+        <label>GENDER</label>
+        MALE :
+        <input type="radio" id="gender" value="male"   name="gender" /> MALE :
+        <input type="radio" id="gender" value="female" name="gender" />
+      </div>
+      <div>
+        <label>Hobies</label>
+        <input type="checkbox" id ="hobbies" name="hobbies" value="cricket" />cricket
+        <input type="checkbox" id ="hobbies" name="hobbies" value="reading" />Reading
+        <input type="checkbox" id ="hobbies" name="hobbies" value="dancing" />Dancing
+        <input type="checkbox" id ="hobbies" name="hobbies" value="singing" />Singing
+      </div>
+        <div>
+            <label>Phone</label>
+            <input type="tel" id = "phone">
+        </div>
+        <div>
+            Enter age
+            <!-- label tag is not compulsary -->
+            <input type="number" name= "age">
+        </div>
+        <div>
+            <label>Enter address</label>
+            <textarea name = "address"></textarea>
+        </div>
+        <div>
+            ENTER YOUR CITY
+            <select>
+                    <option id="city" name="name">SELECT CITY</option>
+                    <option>Delhi</option>
+                    <option>Chennai</option>
+                    <option>Mumbai</option>
+                    <option>Hyderabad</option>
+            </select>
+        </div>
+        <div>
+            <input type="file" name="profile">
+        </div>
+        <div>
+            <label>SELECT color</label>
+            <input type="color" name="col" id="col">
+        </div>
+        <div>
+            <label>SELECT DATE</label>
+            <input type="date" id="dt" name="dt">
+        </div>
+        
+        <div>
+            <label>SELECT TIME</label>
+            <input type="time" id="tm" name="tm">
+        </div>
+
+    </form>
+  </body>
+</html>
